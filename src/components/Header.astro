@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo.svg"; // La imagen es 1600x900
+---
+
+<header class="sticky top-0 z-50">
+  <nav class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <a href="/" class="text-2xl font-semibold text-primary flex justify-center items-center gap-2"
+        ><Image src={logo} alt="Logo" width={70} />Luciana Bustos</a
+      >
+      <ul class="flex space-x-6">
+        <li>
+          <a href="/" class="text-gray-600 hover:text-gray-800">Inicio</a>
+        </li>
+        <li>
+          <a href="/about" class="text-gray-600 hover:text-gray-800"
+            >Sobre Mi</a>
+        </li>
+        <li>
+          <a href="/contact" class="text-gray-600 hover:text-gray-800"
+            >Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

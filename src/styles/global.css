@@ -6,7 +6,7 @@
 
 :root {
   /* Modo Claro (por defecto) */
-  --color-background: 00  00 00;
+  --color-background: 7 88 91;
   --color-text: 10 10 10;
   --color-primary: 34 97 94;
   --color-accent-main: 67 56 202;
@@ -28,4 +28,18 @@ body {
   background-color: hsl(var(--color-background));
   color: hsl(var(--color-text));
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.word-wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.word-inner {
+  display: block;
+}
+
+/* Clases para la animación de scroll (si usas Tailwind) */
+[data-animate] {
+  @apply transition-all duration-700 ease-out;
 }
