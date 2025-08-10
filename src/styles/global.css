@@ -1,0 +1,31 @@
+/* src/styles/global.css */
+@import "tailwindcss";
+
+
+/* src/styles/global.css */
+
+:root {
+  /* Modo Claro (por defecto) */
+  --color-background: 00  00 00;
+  --color-text: 10 10 10;
+  --color-primary: 34 97 94;
+  --color-accent-main: 67 56 202;
+  --color-accent-secondary: 219 39 119;
+}
+
+/* Cuando el <html> tiene la clase .dark, se aplican estos estilos */
+html.dark {
+  /* Modo Oscuro */
+  --color-background: 17 24 39;
+  --color-text: 229 231 235;
+  --color-primary: 94 234 212;
+  --color-accent-main: 165 180 252;
+  --color-accent-secondary: 244 114 182;
+}
+
+/* Pequeña transición suave para el cambio de color */
+body {
+  background-color: hsl(var(--color-background));
+  color: hsl(var(--color-text));
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
